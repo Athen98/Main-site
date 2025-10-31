@@ -1,0 +1,21 @@
+export const metadata = { title: "Book a Call | PHB" };
+
+export default function BookPage() {
+  return (
+    <section className="section">
+      <div className="container mx-auto">
+        <h1 className="text-3xl md:text-4xl font-bold">Book a Call</h1>
+        <p className="text-neutral-600 mt-2">Pick a time that fits your week.</p>
+        <div className="card mt-6">
+          <div className="w-full h-[700px]">
+            <iframe
+              title="Calendly"
+              src="https://calendly.com/YOUR-USERNAME/intro-call"  // <-- paste your exact link
+              className="w-full h-full rounded-xl border"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
